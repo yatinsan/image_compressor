@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="page">
+        <h3>IMAGE COMPRESS</h3>
+        <form action="" className="input">
+          <input className="fullwid" type="number" placeholder="quality of image" name="" id="" min='10' max='100' step='10' />
+          <input className="fullwid" type="number" placeholder="width resolution" name="" id="" min='10' max='100' step='10' />
+          <input className="fullwid" type="number" placeholder="height resolution" name="" id="" min='10' max='100' step='10' />
+          <input className="form-control" type="file" name="" id="" />
+          <div className="center"><button className='sb-Btn'><i class="bi bi-box-arrow-in-down"></i></button></div>
+        </form>
+      </div>
     </div>
   );
 }
